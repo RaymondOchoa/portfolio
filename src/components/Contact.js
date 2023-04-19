@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 import { motion } from 'framer-motion';
 
 const Contact = () => {
-  const { register, handleSubmit, formState: {  } } = useForm();
+  const { register, handleSubmit, formState } = useForm();
   const onSubmit = formData =>{
     window.location.href = `mailto:ochoaraymond54@gmail?subject=${formData.subject}&body=Hi, my name is${formData.name}. ${formData.message}`
   };

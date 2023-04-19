@@ -27,12 +27,14 @@ const Header = () => {
           fgColor="gray"
           bgColor="transparent"
           target="_blank"
+          rel="noreferrer"
         />
         <SocialIcon 
           url="https://www.linkedin.com/in/raymondochoa"
           fgColor="gray"
           bgColor="transparent"
           target="_blank"
+          rel="noreferrer"
         />
       </motion.div>
       <a href="#contact">

@@ -27,6 +27,7 @@ const Projects = () => {
           <a 
             href="https://movie-scout.onrender.com/" className='flex justify-center align cursor-pointer hover:scale-105 hover:text-blue-500'
             target='_blank'
+            rel="noreferrer"
           >Movie-Scout.onrender.com</a>
 
         </div>

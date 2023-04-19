@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .nav-button {
+    @apply px-6 py-2 border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#42946b]/40 hover:text-[#42946b]/40;
+  }
+  .contact-input {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#32a852]/40 focus:text-[#32a852]/40 hover:border-[#32a852]/40
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --green:#66b48d;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

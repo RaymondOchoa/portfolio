@@ -1,5 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import javalogo from '../assets/javalogo.png'
+import reactlogo from '../assets/reactlogo.png'
+import csslogo from '../assets/csslogo.png'
+import htmllogo from '../assets/htmllogo.png'
+import learnlogo from '../assets/learnlogo.png'
 
 const LearnCard = () => {
   return (
@@ -13,16 +18,16 @@ const LearnCard = () => {
         whileInView={{ opacity: 1, y:0 }}
         viewport={{ once: true }}
         className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-        src="learnlogo.png" alt="learn logo"
+        src={learnlogo} alt="learn logo"
       />
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">Full Stack Student</h4>
         <p className="font-bold text-2xl mt-1">Learn Academy</p>
         <div className="flex space-x-2 my-2">
-          <img className="h-10 w-10 rounded-full" src="javalogo.png" alt="java logo" />
-          <img className="h-10 w-10 rounded-full" src="reactlogo.png" alt="react logo" />
-          <img className="h-10 w-10 rounded-full" src="csslogo.png" alt="CSS logo" />
-          <img className="h-10 w-10 rounded-full" src="htmllogo.png" alt="html logo" />
+          <img className="h-10 w-10 rounded-full" src={javalogo} alt="java logo" />
+          <img className="h-10 w-10 rounded-full" src={reactlogo} alt="react logo" />
+          <img className="h-10 w-10 rounded-full" src={csslogo} alt="CSS logo" />
+          <img className="h-10 w-10 rounded-full" src={htmllogo} alt="html logo" />
           {/* tech stack */}
           {/* tech stack */}
           {/* tech stack */}

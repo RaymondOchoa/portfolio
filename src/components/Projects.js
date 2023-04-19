@@ -1,5 +1,5 @@
 import React from 'react'
-
+import moviescout from '../assets/moviescoutpage.png'
 
 const Projects = () => {
   return (
@@ -12,7 +12,7 @@ const Projects = () => {
 
       <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
         <img 
-          src="moviescoutpage.png" alt="moviescout app"
+          src={moviescout} alt="moviescout app"
           className='h-[450px] w-[800px]'
         />
 

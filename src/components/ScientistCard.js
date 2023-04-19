@@ -1,5 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import scientistlogo from '../assets/scientistlogo.png'
+import rubylogo from '../assets/rubylogo.png'
+import hamllogo from '../assets/hamllogo.png'
+import scsslogo from '../assets/scsslogo.png'
 
 const ScientistCard = () => {
   return (
@@ -13,16 +17,16 @@ const ScientistCard = () => {
         whileInView={{ opacity: 1, y:0 }}
         viewport={{ once: true }}
         className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-        src="../scientistlogo.png"
+        src={scientistlogo}
         alt="scientist-logo"
       />
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">Intern</h4>
         <p className="font-bold text-2xl mt-1">Scientist.com</p>
         <div className="flex space-x-2 my-2">
-          <img className="h-10 w-10 rounded-full" src="../rubylogo.png" alt="ruby logo" />
-          <img className="h-10 w-10 rounded-full" src="../hamllogotwo.png" alt="haml logo" />
-          <img className="h-10 w-10 rounded-full" src="../scsslogo.png" alt="scss" />
+          <img className="h-10 w-10 rounded-full" src={rubylogo} alt="ruby logo" />
+          <img className="h-10 w-10 rounded-full" src={hamllogo} alt="haml logo" />
+          <img className="h-10 w-10 rounded-full" src={scsslogo}alt="scss" />
         </div>
         <p>Started March '23 - April '23</p>
 

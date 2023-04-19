@@ -1,6 +1,7 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
+import avi from '../assets/avi.png'
 
 
 
@@ -21,7 +22,7 @@ const Avi = () => {
         <BackgroundCircles />
         <img 
             className="relative rounded-full h-32 w-32 mx-auto object-cover"
-            src="../avi.png" alt="avi"
+            src={avi} alt="avi"
         />
         <div className="z-20">
             <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">Full Stack Developer</h2>

@@ -6,7 +6,7 @@ import BackgroundCircles from './BackgroundCircles'
 
 
 const Avi = () => {
-    const [text, count] = useTypewriter({
+    const [text] = useTypewriter({
         words: [
             "Welcome to my portfolio",
             "Get to know me",

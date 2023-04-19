@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 import { motion } from 'framer-motion';
 
 const Contact = () => {
-  const { register, handleSubmit, formState } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = formData =>{
     window.location.href = `mailto:ochoaraymond54@gmail?subject=${formData.subject}&body=Hi, my name is${formData.name}. ${formData.message}`
   };
@@ -22,30 +22,33 @@ const Contact = () => {
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
           <div className="flex space-x-2">
             <input
-              {...register("name")} 
+              {...register("name", { required: true })} 
               placeholder="Name" 
               className="contact-input" 
               type="text"
-            />
+            />  
             <input
-            {...register("email")}  
+            {...register("email", {required: true})}  
               placeholder="Email" 
               className="contact-input" 
               type="email"
             />
           </div>
+          <div className='flex justify-around'>{errors.name && <span>A name is required</span>} {errors.email && <span>An email is required.</span>}</div>
           <input
-          {...register("subject")}  
+          {...register("subject", { required: true })}  
             placeholder="Subject" 
             className="contact-input" 
             type="text"
-          />
+          /><div className="flex justify-around">{errors.subject && <span>A subject is required.</span>}</div>
 
         <textarea
-        {...register("message")}  
+        {...register("message", { required: true })}  
           placeholder="Message" 
           className="contact-input" 
         />
+        <div className="flex justify-around">{errors.message && <span>A message is required.</span>}</div>
+  
 
         <button 
           type="submit"

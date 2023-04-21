@@ -13,22 +13,23 @@ const Projects = () => {
       <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
         <img 
           src={moviescout} alt="moviescout app"
-          className='h-[450px] w-[800px]'
+          className='h-[150px] w-[600] md:h-[450px] md:w-[800px]'
         />
 
         <div className="space-y-10 px-0 md:px-10 max-w-6xl f">
-          <h4 className="text-4xl font-semibold text-center">
+          <h4 className="text-2xl md:text-4xl font-semibold text-center">
             <span className="underline decoration-[#32a852]/50">Project #1:</span>{" "}
             Movie Scout
           </h4>
 
-          <p className="text-lg text-center md:text-left">During my time at Learn Academy, I collaborated with a group to create a movie app that allows users to share their favorite films with others. The app allows users to post movies they've seen and want others to watch, as well as search for and add movies to their viewing list. This app is a great tool for movie enthusiasts to discover new films and share recommendations with others
+          <p className="text-sm md:text-lg text-center md:text-left">During my time at Learn Academy, I collaborated with a group to create a movie app that allows users to share their favorite films with others. The app allows users to post movies they've seen and want others to watch, as well as search for and add movies to their viewing list. This app is a great tool for movie enthusiasts to discover new films and share recommendations with others
           </p>
           <a 
-            href="https://movie-scout.onrender.com/" className='flex justify-center align cursor-pointer hover:scale-105 hover:text-blue-500'
+            href="https://movie-scout.onrender.com/" 
+            className='flex justify-center align cursor-pointer text-sm md:text-base hover:scale-105 hover:text-blue-500'
             target='_blank'
             rel="noreferrer"
-          >Movie-Scout.onrender.com</a>
+          >Live Demo</a>
 
         </div>
       </div>

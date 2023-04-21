@@ -30,10 +30,10 @@ const About = () => {
       />
 
       <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">Here is a{" "}
+        <h4 className="text-2xl md:text-4xl font-semibold">Here is a{" "}
           <span className="underline decoration-[#66B48D]">little</span> background
         </h4>
-        <p className="text-base">I am a web developer based out of Sacramento, California, able to create a web presence from the ground up. I have a strong foundation in web development and am able to create effective web solutions from start to finish. I like finding creative solutions to my problems and enjoy working collaboratively with a team. I have experience with a variety of scripting languages and frameworks, which allows me to adapt and learn quickly in new development environments. With my skills and eagerness to learn and grow, I am excited to take on new challenges.</p>
+        <p className="text-sm md:text-base">I am a web developer based out of Sacramento, California, able to create a web presence from the ground up. I have a strong foundation in web development and am able to create effective web solutions from start to finish. I like finding creative solutions to my problems and enjoy working collaboratively with a team. I have experience with a variety of scripting languages and frameworks, which allows me to adapt and learn quickly in new development environments. With my skills and eagerness to learn and grow, I am excited to take on new challenges.</p>
       </div>
       
     </motion.div>

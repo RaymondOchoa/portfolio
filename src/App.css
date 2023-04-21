@@ -7,7 +7,7 @@
     @apply px-6 py-2 border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#42946b]/40 hover:text-[#42946b]/40;
   }
   .contact-input {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#32a852]/40 focus:text-[#32a852]/40 hover:border-[#32a852]/40
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-[1px] md:px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#32a852]/40 focus:text-[#32a852]/40 hover:border-[#32a852]/40
   }
 }
 

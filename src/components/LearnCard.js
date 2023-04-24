@@ -8,7 +8,7 @@ import learnlogo from '../assets/learnlogo.png'
 
 const LearnCard = () => {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-=[500px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[500px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{ 
           y: -100,
@@ -28,9 +28,6 @@ const LearnCard = () => {
           <img className="h-10 w-10 rounded-full" src={reactlogo} alt="react logo" />
           <img className="h-10 w-10 rounded-full" src={csslogo} alt="CSS logo" />
           <img className="h-10 w-10 rounded-full" src={htmllogo} alt="html logo" />
-          {/* tech stack */}
-          {/* tech stack */}
-          {/* tech stack */}
         </div>
         <p>November '22 - Ended April '23</p>
 
